@@ -1,5 +1,6 @@
 #include "savetest.h"
 #include "showfirstwordstest.h"
+#include "mweftest.h"
 
 #include <gtest/gtest.h>
 
