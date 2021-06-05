@@ -20,7 +20,7 @@ TEST(savetest, noempty)
 
     QFile file("save_test.txt");
     bool is_open = file.open(QIODevice::ReadOnly);
-    ASSERT_EQ(is_open, true);
+    ASSERT_TRUE(is_open);
 
     QString line_f;
     std::list<std::string>::iterator line_t = txt->lines->begin();
@@ -48,7 +48,7 @@ TEST(savetest, large_strings)
 
     QFile file("save_test.txt");
     bool is_open = file.open(QIODevice::ReadOnly);
-    ASSERT_EQ(is_open, true);
+    ASSERT_TRUE(is_open);
 
     QString line_f;
     std::list<std::string>::iterator line_t = txt->lines->begin();
@@ -76,7 +76,7 @@ TEST(savetest, empty_strings)
 
     QFile file("save_test.txt");
     bool is_open = file.open(QIODevice::ReadOnly);
-    ASSERT_EQ(is_open, true);
+    ASSERT_TRUE(is_open);
 
     QString line_f;
     std::list<std::string>::iterator line_t = txt->lines->begin();
@@ -105,7 +105,7 @@ TEST(savetest, with_empty_strings)
 
     QFile file("save_test.txt");
     bool is_open = file.open(QIODevice::ReadOnly);
-    ASSERT_EQ(is_open, true);
+    ASSERT_TRUE(is_open);
 
     QString line_f;
     std::list<std::string>::iterator line_t = txt->lines->begin();
@@ -128,7 +128,7 @@ TEST(savetest, empty)
     save(txt, "save_test.txt");
     QFile file("save_test.txt");
     bool is_open = file.open(QIODevice::ReadOnly);
-    ASSERT_EQ(is_open, true);
+    ASSERT_TRUE(is_open);
 
     QString line_f;
     std::list<std::string>::iterator line_t = txt->lines->begin();

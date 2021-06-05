@@ -33,4 +33,5 @@ HEADERS += \
     ../app/common.h \
     ../app/text/_text.h \
     ../app/text/text.h \
-    savetest.h
+    savetest.h \
+    showfirstwordstest.h
