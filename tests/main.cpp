@@ -2,6 +2,7 @@
 #include "showfirstwordstest.h"
 #include "mweftest.h"
 #include "mtest.h"
+#include "rntest.h"
 
 #include <gtest/gtest.h>
 

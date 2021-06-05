@@ -35,5 +35,6 @@ HEADERS += \
     ../app/text/text.h \
     mtest.h \
     mweftest.h \
+    rntest.h \
     savetest.h \
     showfirstwordstest.h
