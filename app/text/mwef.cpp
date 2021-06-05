@@ -3,10 +3,8 @@
 
 #include "_text.h"
 
-using namespace std;
-
 void mwef(text txt) {
-    list<string>::iterator current = txt->cursor->line;
+    std::list<std::string>::iterator current = txt->cursor->line;
 
     int length = (*current).length();
 
