@@ -9,8 +9,8 @@ void load(text txt, char *filename)
 {
     FILE *f;
 
-    char buf[MAXLINE + 1];
-
+    char buf[1024];
+    
     /* Открываем файл для чтения, контролируя ошибки */
     if ((f = fopen(filename, "r")) == NULL) {
         printf("The file %s cannot be opened\n", filename);

@@ -42,6 +42,23 @@ TEST(sfwtest, only_first_words)
     ASSERT_TRUE(text == out);
 }
 
+TEST(sfwtest, spaces_before_first_words)
+{
+    text txt = create_text();
+    std::string out = "";
+
+    for (int i = 0; i < 10; i++) {
+        append_line(txt, "  qwerty");
+        out += "qwerty\n";
+    }
+
+    testing::internal::CaptureStdout();
+
+    showfirstwords(txt);
+    std::string text = testing::internal::GetCapturedStdout();
+    ASSERT_TRUE(text == out);
+}
+
 TEST(sfwtest, empty_strings)
 {
     text txt = create_text();
